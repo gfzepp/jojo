@@ -1,0 +1,310 @@
+* {
+	box-sizing: border-box; 
+	margin: 0;
+	padding: 0;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+img {
+  border-style: none;
+}
+
+*::before *::after {
+	box-sizing: border-box; 
+}
+
+
+h1 h2 h3 h4 h5 h6 {
+	padding: 0;
+	margin: 0;
+}
+
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Playfair Display', serif;
+}
+
+
+/* HEADER */
+
+.header {
+	padding-top: 40px;
+	position: absolute; 
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.container {
+	max-width: 1710px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.header-nav {
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+
+.header-logo {
+	min-height: 74px;
+}
+
+.header-list {
+	display: flex;
+	list-style-type: none; 
+	margin-left: 514px; 
+}
+
+.header-item {
+	
+}
+
+.header-item:not(:last-child){
+	margin-right: 45px;
+}
+
+.header-link {
+	font-family: 'Montserrat',sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	color: #F2EEEF;
+	transition: all 0.3s ease-in-out;
+}
+
+.header-link:hover {
+	color: #F4F900;
+
+}
+
+@media(max-width: 1098px) {
+	.header-nav {
+		justify-content: space-between; 
+	}
+
+	.header-list {
+		margin-left: 0
+	}
+}
+
+@media(max-width: 768px) {
+	.header-list {
+		display: none
+	}
+}
+
+/* HERO */ 
+
+.hero {
+	padding-top: 220px;
+	padding-bottom: 74px;
+	background-image: url("../img/bg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 1080px;
+}
+
+.hero-about {
+	max-width: 588px;
+}
+
+.hero-title {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 104px;
+	color: #F2EEEF;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.hero-descr {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 45px;
+	color: #F2EEEF;
+	margin: 0;
+	margin-bottom: 70px;
+}
+
+.hero-link {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 103px;
+}
+
+.hero-button {
+	display: inline-block;
+	background: #EFC42B;
+	border-radius: 38px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	color: #160000;
+	min-height: 75px;
+	max-width: 305px;
+	padding: 24px 64px;
+	transition: 1s;
+}
+
+.hero-button:hover {
+	transform: scale(1.2);
+}
+
+.hero-video {
+	margin-left: auto;
+	cursor: pointer; 
+}
+
+.hero-report {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 25px;
+	color: #BEBEBE;
+	width: 108px;
+	margin-left: 20px;
+}
+
+.hero-footer {
+	display: flex;
+	justify-content: space-between; 
+}
+.hero-site {
+	margin-top: 237px;
+}
+
+.hero-site p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.01em;
+	color: #F2EEEF;
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.hero-list {
+	display: flex;
+	list-style-type: none; 
+}
+
+.hero-item:not(:last-child) {
+	margin-right: 37px;
+}
+
+.hero-link {
+
+}
+
+.fc {
+	background-image: url("../img/fc.png");
+	width: 24px;
+	height: 24px
+}
+
+.inst {
+	background-image: url("../img/inst.png");
+	width: 24px;
+	height: 24px
+}
+
+.yt {
+	background-image: url("../img/yt.png");
+	width: 24px;
+	height: 24px
+}
+
+.vk {
+	background-image: url("../img/vk.png");
+	width: 24px;
+	height: 24px
+}
+
+.hero-travel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+}
+
+.travel-card {
+	min-width: 285px;
+	border-radius: 16px;
+	cursor: pointer;
+	transition: all .2s ease-in-out
+}
+
+.travel-card:hover {
+	transform: scale(1.1);
+}
+
+.travel-card-about {
+	padding: 25px 0;
+	max-width: 220px;
+	margin: 0 auto;
+}
+
+.travel-card:not(:last-child) {
+	margin-right: 30px;
+}
+
+.travel-card-title {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 33px;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #F2EEEF;
+	margin-bottom: 95px;
+}
+
+.travel-card-descr {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: #F2EEEF;
+}
+.travel-card-list {
+	display: flex;
+	align-items: center;
+}
+
+.travel-img {
+	margin-left: auto;
+}
+
+.neapol {
+	background-image: url("../img/neap.png");
+}
+
+.sard {
+	background-image: url("../img/sard.png");
+}
+
+.col {
+	background-image: url("../img/col.png");
+}
